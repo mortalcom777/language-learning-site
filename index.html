@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning - РР·СѓС‡РµРЅРёРµ СЏР·С‹РєРѕРІ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>рџЊЌ Language Learning</h1>
+            <p>РћСЃРІРѕР№С‚Рµ РЅРѕРІС‹Р№ СЏР·С‹Рє Р»РµРіРєРѕ Рё Р±С‹СЃС‚СЂРѕ</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Р’С‹Р±РµСЂРёС‚Рµ СЏР·С‹Рє РґР»СЏ РёР·СѓС‡РµРЅРёСЏ</h2>
+            <p>РќР°С€ СЃР°Р№С‚ РїРѕРјРѕР¶РµС‚ РІР°Рј РѕСЃРІРѕРёС‚СЊ Р±Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ СЏР·С‹РєР° СЃ РїРѕРјРѕС‰СЊСЋ СѓСЂРѕРєРѕРІ, РІРёРґРµРѕСѓСЂРѕРєРѕРІ, С‚РµСЃС‚РѕРІ Рё Р·Р°РґР°РЅРёР№</p>
+        </section>
+
+        <section class="languages-grid">
+            <div class="language-card" onclick="navigateToLanguage('english')">
+                <div class="flag">рџ‡¬рџ‡§</div>
+                <h3>РђРЅРіР»РёР№СЃРєРёР№</h3>
+                <p>English</p>
+                <span class="level">Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</span>
+            </div>
+
+            <div class="language-card" onclick="navigateToLanguage('kazakh')">
+                <div class="flag">рџ‡°рџ‡ї</div>
+                <h3>РљР°Р·Р°С…СЃРєРёР№</h3>
+                <p>ТљР°Р·Р°Т› С‚С–Р»С–</p>
+                <span class="level">Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</span>
+            </div>
+
+            <div class="language-card" onclick="navigateToLanguage('spanish')">
+                <div class="flag">рџ‡Єрџ‡ё</div>
+                <h3>РСЃРїР°РЅСЃРєРёР№</h3>
+                <p>EspaГ±ol</p>
+                <span class="level">Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</span>
+            </div>
+
+            <div class="language-card" onclick="navigateToLanguage('korean')">
+                <div class="flag">рџ‡°рџ‡·</div>
+                <h3>РљРѕСЂРµР№СЃРєРёР№</h3>
+                <p>н•њкµ­м–ґ</p>
+                <span class="level">Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</span>
+            </div>
+
+            <div class="language-card" onclick="navigateToLanguage('turkish')">
+                <div class="flag">рџ‡№рџ‡·</div>
+                <h3>РўСѓСЂРµС†РєРёР№</h3>
+                <p>TГјrkГ§e</p>
+                <span class="level">Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</span>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Р§С‚Рѕ РІС‹ РЅР°Р№РґРµС‚Рµ РЅР° СЃР°Р№С‚Рµ:</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="icon">рџ“љ</span>
+                    <h3>РЈСЂРѕРєРё</h3>
+                    <p>РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Рµ РјР°С‚РµСЂРёР°Р»С‹ РґР»СЏ РѕР±СѓС‡РµРЅРёСЏ</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">рџЋ¬</span>
+                    <h3>Р’РёРґРµРѕСѓСЂРѕРєРё</h3>
+                    <p>РќР°РіР»СЏРґРЅС‹Рµ РѕР±СЉСЏСЃРЅРµРЅРёСЏ Рё РїСЂРёРјРµСЂС‹</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">рџЋ¤</span>
+                    <h3>РџСЂРѕРёР·РЅРѕС€РµРЅРёРµ</h3>
+                    <p>РђСѓРґРёРѕ РїСЂРёРјРµСЂС‹ РґР»СЏ РїСЂР°РІРёР»СЊРЅРѕРіРѕ РїСЂРѕРёР·РЅРѕС€РµРЅРёСЏ</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">вњ…</span>
+                    <h3>РўРµСЃС‚С‹</h3>
+                    <p>РџСЂРѕРІРµСЂРєР° Р·РЅР°РЅРёР№ СЃ РёРЅС‚РµСЂР°РєС‚РёРІРЅС‹РјРё С‚РµСЃС‚Р°РјРё</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">рџ“ќ</span>
+                    <h3>Р—Р°РґР°РЅРёСЏ</h3>
+                    <p>РџСЂР°РєС‚РёС‡РµСЃРєРёРµ СѓРїСЂР°Р¶РЅРµРЅРёСЏ РґР»СЏ Р·Р°РєСЂРµРїР»РµРЅРёСЏ</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">рџ‘ЁвЂЌрџ‘©вЂЌрџ‘§вЂЌрџ‘¦</span>
+                    <h3>Р”Р»СЏ РІСЃРµС…</h3>
+                    <p>РџРѕРґС…РѕРґРёС‚ РєР°Рє РґР»СЏ РІР·СЂРѕСЃР»С‹С…, С‚Р°Рє Рё РґР»СЏ РґРµС‚РµР№</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>В© 2026 Language Learning - Р‘РµСЃРїР»Р°С‚РЅРѕРµ РёР·СѓС‡РµРЅРёРµ СЏР·С‹РєРѕРІ</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
