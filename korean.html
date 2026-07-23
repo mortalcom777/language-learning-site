@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РљРѕСЂРµР№СЃРєРёР№ СЏР·С‹Рє - Language Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="language-header">
+        <div class="container">
+            <button class="back-button" onclick="goBack()">в†ђ РќР°Р·Р°Рґ Рє СЏР·С‹РєР°Рј</button>
+            <h1>рџ‡°рџ‡· РљРѕСЂРµР№СЃРєРёР№ СЏР·С‹Рє</h1>
+            <p>н•њкµ­м–ґ - Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="lessons">рџ“љ РЈСЂРѕРєРё</button>
+            <button class="nav-tab" data-tab="video">рџЋ¬ Р’РёРґРµРѕСѓСЂРѕРєРё</button>
+            <button class="nav-tab" data-tab="pronunciation">рџЋ¤ РџСЂРѕРёР·РЅРѕС€РµРЅРёРµ</button>
+            <button class="nav-tab" data-tab="tests">вњ… РўРµСЃС‚С‹</button>
+            <button class="nav-tab" data-tab="tasks">рџ“ќ Р—Р°РґР°РЅРёСЏ</button>
+        </nav>
+
+        <section id="lessons" class="content-section active">
+            <h2>РЈСЂРѕРєРё РєРѕСЂРµР№СЃРєРѕРіРѕ СЏР·С‹РєР°</h2>
+            <div class="lesson-card">
+                <h3>РЈСЂРѕРє 1: РџСЂРёРІРµС‚СЃС‚РІРёСЏ Рё Р·РЅР°РєРѕРјСЃС‚РІРѕ</h3>
+                <p>РћСЃРЅРѕРІРЅС‹Рµ С„СЂР°Р·С‹ РґР»СЏ РїСЂРёРІРµС‚СЃС‚РІРёСЏ Рё Р·РЅР°РєРѕРјСЃС‚РІР°</p>
+                <div class="lesson-content">
+                    <p><strong>м•€л…•н•м„ёмљ” (Annyeonghaseyo)</strong> - Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ</p>
+                    <p><strong>м•€л…• (Annyeong)</strong> - РџСЂРёРІРµС‚</p>
+                    <p><strong>м њ мќґл¦„мќЂ... (Je ireumeun...)</strong> - РњРµРЅСЏ Р·РѕРІСѓС‚...</p>
+                    <p><strong>к°ђм‚¬н•©л‹€л‹¤ (Gamsahamnida)</strong> - РЎРїР°СЃРёР±Рѕ</p>
+                </div>
+            </div>
+            <div class="lesson-card">
+                <h3>РЈСЂРѕРє 2: Р§РёСЃР»Р°</h3>
+                <p>Р§РёСЃР»Р° РѕС‚ 1 РґРѕ 10</p>
+                <div class="lesson-content">
+                    <p><strong>1 - мќј (Il)</strong>, <strong>2 - мќґ (I)</strong>, <strong>3 - м‚ј (Sam)</strong>, <strong>4 - м‚¬ (Sa)</strong>, <strong>5 - м¤ (O)</strong></p>
+                    <p><strong>6 - мњЎ (Yuk)</strong>, <strong>7 - м№  (Chil)</strong>, <strong>8 - нЊ” (Pal)</strong>, <strong>9 - кµ¬ (Gu)</strong>, <strong>10 - м‹­ (Sip)</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="content-section">
+            <h2>Р’РёРґРµРѕСѓСЂРѕРєРё</h2>
+            <div class="video-container">
+                <h3>РЈСЂРѕРє 1: РџСЂРёРІРµС‚СЃС‚РІРёСЏ</h3>
+                <div class="video-placeholder">
+                    <p>рџЋ¬ Р’РёРґРµРѕСѓСЂРѕРє: РџСЂРёРІРµС‚СЃС‚РІРёСЏ Рё Р·РЅР°РєРѕРјСЃС‚РІРѕ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pronunciation" class="content-section">
+            <h2>РџСЂРѕРёР·РЅРѕС€РµРЅРёРµ СЃР»РѕРІ</h2>
+            <div class="pronunciation-item">
+                <span class="word">м•€л…•н•м„ёмљ”</span>
+                <span class="translation">Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ</span>
+                <button class="play-button" onclick="speakWord('м•€л…•н•м„ёмљ”', 'ko-KR')">рџ”Љ РџСЂРѕСЃР»СѓС€Р°С‚СЊ</button>
+            </div>
+            <div class="pronunciation-item">
+                <span class="word">к°ђм‚¬н•©л‹€л‹¤</span>
+                <span class="translation">РЎРїР°СЃРёР±Рѕ</span>
+                <button class="play-button" onclick="speakWord('к°ђм‚¬н•©л‹€л‹¤', 'ko-KR')">рџ”Љ РџСЂРѕСЃР»СѓС€Р°С‚СЊ</button>
+            </div>
+        </section>
+
+        <section id="tests" class="content-section">
+            <h2>РўРµСЃС‚С‹</h2>
+            <div class="test-question">
+                <h3>Р’РѕРїСЂРѕСЃ 1: РљР°Рє Р±СѓРґРµС‚ "Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ" РїРѕ-РєРѕСЂРµР№СЃРєРё?</h3>
+                <div class="test-options">
+                    <div class="test-option" data-question="1" data-option="a" onclick="selectOption(1, 'a', false)">A) м•€л…• (Annyeong)</div>
+                    <div class="test-option" data-question="1" data-option="b" onclick="selectOption(1, 'b', true)">B) м•€л…•н•м„ёмљ” (Annyeonghaseyo)</div>
+                </div>
+            </div>
+            <button class="test-button" onclick="checkTest()">РџСЂРѕРІРµСЂРёС‚СЊ</button>
+            <button class="test-button" onclick="resetTest()" style="background: var(--warning-color);">РЎР±СЂРѕСЃРёС‚СЊ</button>
+            <div id="test-result"></div>
+        </section>
+
+        <section id="tasks" class="content-section">
+            <h2>Р—Р°РґР°РЅРёСЏ</h2>
+            <div class="task-item">
+                <h3>Р—Р°РґР°РЅРёРµ 1: РџРµСЂРµРІРµРґРёС‚Рµ "РњРµРЅСЏ Р·РѕРІСѓС‚ РњРёРЅ-СЃСѓ"</h3>
+                <textarea id="task-1-answer" placeholder="Р’РІРµРґРёС‚Рµ РІР°С€ РѕС‚РІРµС‚..."></textarea>
+                <button class="test-button" onclick="checkTask(1, ['м њ мќґл¦„мќЂ лЇјм€мћ…л‹€л‹¤', 'м њ мќґл¦„мќЂ лЇјм€'])">РџСЂРѕРІРµСЂРёС‚СЊ</button>
+                <div id="task-1-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>В© 2026 Language Learning</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
